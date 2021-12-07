@@ -1,0 +1,30 @@
+.hero__row {
+
+}
+.hero__h1 {
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 56px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 800;
+    padding-left: 150px;
+    padding-right: 150px;
+        span {
+            display: block;
+        }
+}
+
+.hero__h2 {
+position: relative;
+ font-family: 'Monsterrat', sans-serif;   
+ font-size: 28px;
+ line-height: 34px;
+ font-weight: 800;
+ text-align: center;
+ color: #018FDE;
+    &::after {
+        content: url(../../Assets/Decor.png);
+        display: block;
+        // position: absolute;
+    }
+}

@@ -1,14 +1,45 @@
+$btnActive: #8792A7;
+$borderColor: #121212;
+
 .btn__wrap {
-  background-color: #fff;
-  border: 1px solid #121212;
   position: relative;
+  z-index: 2;
+  width: 95px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid $borderColor;
+  transition-property: border;
+  transition: border 2s ease-in-out;
+    &:hover {
+      border: none;
+      bottom: 1px solid rgba(255,255,255,0);
+    }
 }
 .btn__light {
-  background-color: #fff;
-  height: 24px;
-  width: 47px;
-  left: 24px;
-  top: 8px;
-  border: 1px solid #121212;
   position: absolute;
+  display: block;
+  z-index: 0;
+  bottom: 5px;
+  left: 5px;
+  background-color: #fff;
+  //margin: 8px 25px;
+  font-family: "Monsterrat";
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 95px;
+  height: 40px;
+  //outline-style: double;
+  border: 1px solid $borderColor;
+    &:active {
+      color: $btnActive;
+    }
 }
+
+// .btn__light:active {
+//   color: $btnActive;
+// }
+// .btn__wrap:hover {
+//   border: none;
+// }
