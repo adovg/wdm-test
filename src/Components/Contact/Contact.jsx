@@ -1,11 +1,14 @@
 import React from 'react';
-import Form from './Form/Form';
+import FormItem from './Form/Form';
+import './Contact.scss';
+import { Container, Row } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Contact() {
     return (
-        <div>
-            <h3>Contact Us</h3>
-            <Form />
-        </div>
+        <Container className="contact">
+            <h3><span>Contact</span>Us</h3>
+            <FormItem />
+        </Container>
     )
 }

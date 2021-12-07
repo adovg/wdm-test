@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import "./App.css";
 import { Container, Row } from "react-bootstrap";
 import Header from "./Components/Header/Header";

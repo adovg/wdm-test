@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Hero.scss";
+import ButtonMain from "../../ButtonMain/ButtonMain";
 
 export default function Hero() {
   return (
@@ -14,9 +15,7 @@ export default function Hero() {
           </p>
         </Col>
         <Col>
-          <div className="hero__btn-wrap">
-            <button className="hero__btn">Get a free consultation</button>
-          </div>
+          <ButtonMain text={'Get a free consultation'}/>
         </Col>
       </Row>
     </Container>

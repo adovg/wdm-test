@@ -1,5 +1,12 @@
-.hero__row {
-
+.main__container:before {
+    content: url(../../Assets/Decor-left.svg);
+    position: absolute;
+    left: 94vh;
+}
+.main__container::after {
+    content: url(../../Assets/Decor-right.svg);
+    position: absolute;
+    right: 94vh;
 }
 .hero__h1 {
     font-family: 'Monsterrat', sans-serif;
@@ -16,6 +23,8 @@
 
 .hero__h2 {
 position: relative;
+padding-left: 150px;
+padding-right: 150px;
  font-family: 'Monsterrat', sans-serif;   
  font-size: 28px;
  line-height: 34px;
@@ -25,6 +34,12 @@ position: relative;
     &::after {
         content: url(../../Assets/Decor.png);
         display: block;
-        // position: absolute;
     }
 }
+// .hero__h1-firstRow::before{
+//     content: url(../../Assets/Decor-left.svg);
+//     display: block;
+//     position: absolute;
+//     top: 95px;
+//     //bottom: 5px;
+// }
