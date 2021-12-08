@@ -1,7 +1,28 @@
-.navbar__row {
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+    .nav-link{
+        font-weight: 600;
+        font-size: 26px;
+        color: #121212;
+        }
+}
+
+@media (max-width: 991px) {
+  .nav__container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: start;
+  }
+  .decorator {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 32px;
-    margin-bottom: 110px;
+    margin: 0 10px;
+  }
+  .toggle {
+    top: 10px;
+    position: sticky;
+  }
 }

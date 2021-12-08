@@ -1,12 +1,31 @@
 .row__input {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+  input {
+    background: #eef3fc;
+    &:active {
+      background: #ffffff;
+    }
+  }
+  textarea {
+    background: #eef3fc;
+  }
 }
 
 .input:active {
-    background: #000;
+  background: #000;
 }
 
 .row__btn {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .row__input {
+    flex-direction: column;
+    margin-bottom: 0px;
+    .col {
+      padding-top: 16px;
+    }
+  }
 }

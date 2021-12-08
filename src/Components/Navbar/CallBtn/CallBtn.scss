@@ -6,7 +6,7 @@ $borderColor: #121212;
   z-index: 2;
   width: 95px;
   height: 40px;
-  background-color: #fff;
+  //background-color: #fff;
   border: 1px solid $borderColor;
   transition-property: border;
   transition: border 2s ease-in-out;
@@ -22,7 +22,6 @@ $borderColor: #121212;
   bottom: 5px;
   left: 5px;
   background-color: #fff;
-  //margin: 8px 25px;
   font-family: "Monsterrat";
   white-space: nowrap;
   font-size: 14px;
@@ -30,8 +29,7 @@ $borderColor: #121212;
   line-height: 24px;
   width: 95px;
   height: 40px;
-  //outline-style: double;
-  border: 1px solid $borderColor;
+  border: 1px solid $borderColor;z
     &:active {
       color: $btnActive;
     }

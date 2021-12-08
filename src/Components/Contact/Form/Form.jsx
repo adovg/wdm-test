@@ -1,12 +1,12 @@
 import React from "react";
 import "./Form.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Form, Container, Row, Col } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
 import ButtonMain from "../../ButtonMain/ButtonMain";
 
 export default function FormItem() {
   return (
-    <Form>
+    <Form className="contact__form">
       <Row className="row__input">
         <Col>
           <Form.Control placeholder="First name" className="input" />

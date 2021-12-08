@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./Hero/Hero";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row} from "react-bootstrap";
 import "./Main.scss";
 
 export default function Main() {
@@ -12,7 +12,7 @@ export default function Main() {
           <span>ammet test-test</span>
         </h1>
       </Row>
-      <Row>
+      <Row className="hero__row">
         <h2 className="hero__h2">Let us help you get it all back</h2>
       </Row>
       <Hero />

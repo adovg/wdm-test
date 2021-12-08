@@ -7,7 +7,7 @@ import ButtonMain from "../../ButtonMain/ButtonMain";
 export default function Hero() {
   return (
     <Container>
-      <Row>
+      <Row className="hero_row-text">
         <Col>
           <p className="hero__text">
             <span>We currently take cases</span>{" "}

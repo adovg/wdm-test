@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap");
 .App {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(230,237,250,1) 100%);
 }
 
 .App-logo {

@@ -1,4 +1,25 @@
 .contact {
-    margin-top: 124px;
-    background-color: #fff;
+  margin-top: 96px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  text-align: center;
+  h3 {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  span {
+    color: #018fde;
+  }
+}
+
+@media (max-width: 480px) {
+  .row__input {
+      flex-direction: column;
+      margin-bottom: 0px;
+          .col {
+              padding-top: 16px;
+          }
+  }
 }

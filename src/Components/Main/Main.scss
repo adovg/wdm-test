@@ -1,45 +1,108 @@
 .main__container:before {
-    content: url(../../Assets/Decor-left.svg);
-    position: absolute;
-    left: 94vh;
+  content: url(../../Assets/Decor-left.svg);
+  position: absolute;
+  bottom: 110%;
+  left: 18%;
 }
 .main__container::after {
-    content: url(../../Assets/Decor-right.svg);
-    position: absolute;
-    right: 94vh;
+  content: url(../../Assets/Decor-right.svg);
+  position: absolute;
+  top: 110%;
+  right: 18%;
+}
+.main__container {
+  position: relative;
+  margin-top: 150px;
+}
+.hero__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
 }
 .hero__h1 {
-    font-family: 'Monsterrat', sans-serif;
-    font-size: 56px;
-    line-height: 80px;
-    text-align: center;
-    font-weight: 800;
-    padding-left: 150px;
-    padding-right: 150px;
-        span {
-            display: block;
-        }
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  line-height: 80px;
+  text-align: center;
+  font-weight: 800;
+  padding-left: 150px;
+  padding-right: 150px;
+  span {
+    display: block;
+  }
 }
 
 .hero__h2 {
-position: relative;
-padding-left: 150px;
-padding-right: 150px;
- font-family: 'Monsterrat', sans-serif;   
- font-size: 28px;
- line-height: 34px;
- font-weight: 800;
- text-align: center;
- color: #018FDE;
-    &::after {
-        content: url(../../Assets/Decor.png);
-        display: block;
-    }
+  position: relative;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 800;
+  text-align: center;
+  color: #018fde;
+  &::after {
+    content: url(../../Assets/Decor.png);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
-// .hero__h1-firstRow::before{
-//     content: url(../../Assets/Decor-left.svg);
-//     display: block;
-//     position: absolute;
-//     top: 95px;
-//     //bottom: 5px;
-// }
+
+@media (max-width: 991px) {
+  .main__container:before {
+    bottom: 100%;
+    left: 10%;
+  }
+  .main__container::after {
+    top: 100%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__h1 {
+    font-size: 32x;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 800;
+    padding-left: 24px;
+    padding-right: 24px;
+    span {
+      display: block;
+    }
+  }
+
+  .hero__h2 {
+    position: relative;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 270px;
+    font-size: 28px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #018fde;
+    &::after {
+      content: url(../../Assets/Decor.png);
+      width: 272px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main__container:before {
+    content: "";
+  }
+  .main__container::after {
+    content: "";
+  }
+}
